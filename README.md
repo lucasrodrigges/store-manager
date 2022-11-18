@@ -7,25 +7,35 @@ Com foco na arquitetura MSC (Model, Service, Controller) a aplicação (API REST
 
 Faça o clone do projeto:
 
-`git clone git@github.com:lucasrodrigges/store-manager.git
-  cd store-manager`
+```
+git clone git@github.com:lucasrodrigges/store-manager.git
+cd store-manager
+```
 
 Certifique-se de preencher o '.env' com as informações corretas. Via Docker, nomeie o MYSQL_HOST de 'db', localemnte 'localhost'.
 
 Para rodar localmente certifique-se de ter o MYSQL instalado em sua máquina e rode os comandos:
 
-`npm run migration; npm run seed`
+```
+npm run migration; npm run seed
+```
 
 Para levantar o servidor instale as dependências e inicie o server com os comandos:
 
-`npm install; npm run dev`
+```
+npm install; npm run dev
+```
 
 Para rodar via Docker certifique-se de ter o Docker e o docker-compose isntalados na máquina e rode os comandos:
 
-`docker compose up -d; docker exec -it store_manager bash`
+```
+docker compose up -d; docker exec -it store_manager bash
+```
 
 Dentro do container rode os comandos:
-`npm install; npm run dev`
+```
+npm install; npm run dev
+```
 
 ## Rotas
 
@@ -53,13 +63,16 @@ Dentro do container rode os comandos:
 
 ### Products
 Corpo da requição para cadastrar produto:
-`{
+```
+{
   "name": "ProdutoX"
-}`
+}
+```
 
 ### Sales
 Cortpo da requisição para cadastrar vendas:
-`[
+```
+[
   {
     "productId": 1,
     "quantity": 1
@@ -68,6 +81,7 @@ Cortpo da requisição para cadastrar vendas:
     "productId": 2,
     "quantity": 5
   }
-]`
+]
+```
 
 As requisições para update (PUT) seguem o mesmo exemplo, porém passando o id do produto/venda a ser editado.
