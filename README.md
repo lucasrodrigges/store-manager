@@ -1,6 +1,6 @@
 # Store Manager
 
-O projeto StoreManager  utiliza as tecnologias NodeJS, express, MYSQL, sinon e chai.
+O projeto StoreManager desenvolvido na <a href="https://www.betrybe.com">Trybe</a> utiliza as tecnologias NodeJS, express, MYSQL, sinon e chai.
 Com foco na arquitetura MSC (Model, Service, Controller) a aplicação (API RESTful) disponibiliza requisições do tipo GET, POST, PUT, DELETE onde é possível visualizar, cadastrar, editar e excluir produtos e vendas num banco de dados em MYSQL. A aplicação é coberta de testes unitários onde cada camada é testada isoladamente.
 
 ## Instruções para instalação
